@@ -15,6 +15,6 @@ int main() {
     picture.draw(hwnd, hdc, 0, 0);  // coordinates x, y
     picture.draw(hwnd, hdc, 410, -50);
 
-	cin.get();
-	return 0;
+    cin.get();
+    return 0;
 }
