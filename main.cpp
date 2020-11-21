@@ -12,8 +12,8 @@ int main() {
     FillRect(hdc, &clientRect, CreateSolidBrush(RGB(255, 255, 255)));  // background color
 
     Picture picture;
-	picture.draw(hwnd, hdc, 0, 0);  // coordinates x, y
-	picture.draw(hwnd, hdc, 410, -50);
+    picture.draw(hwnd, hdc, 0, 0);  // coordinates x, y
+    picture.draw(hwnd, hdc, 410, -50);
 
 	cin.get();
 	return 0;

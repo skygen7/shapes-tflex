@@ -5,8 +5,6 @@
 
 
 class Picture {
-
-private:
 public:
     void draw(HWND& hwnd, HDC& hdc, int x, int y);
 };
