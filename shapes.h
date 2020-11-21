@@ -4,16 +4,16 @@
 class Picture {
 
 private:
-	HWND hwnd = GetConsoleWindow();  // идентификатор окна консоли
-	HDC hdc = GetDC(hwnd);  // дескриптор контекста консольного окна
+	HWND hwnd = GetConsoleWindow();  // identifier console window
+	HDC hdc = GetDC(hwnd);  // descriptor
 	HBRUSH brush;
 
 public:
 
 	void background() {
 		RECT clientRect;
-		GetClientRect(hwnd, &clientRect);  // получаем координаты консольного окна
-		FillRect(hdc, &clientRect, CreateSolidBrush(RGB(255, 255, 255)));  // заливка фона
+		GetClientRect(hwnd, &clientRect);  // get coordinates console window
+		FillRect(hdc, &clientRect, CreateSolidBrush(RGB(255, 255, 255)));  // backround color
 	}
 
 	void draw(const int x, const int y) {
@@ -34,7 +34,7 @@ public:
 
 		brush = CreateSolidBrush(RGB(0, 0, 150));
 		SelectObject(hdc, brush);
-		Ellipse(hdc, 200 + x, 100 + y, 250 + x, 150 + y);  // верхнее окно
+		Ellipse(hdc, 200 + x, 100 + y, 250 + x, 150 + y);  // top window
 
 
 	}
