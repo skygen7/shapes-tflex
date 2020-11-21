@@ -35,7 +35,9 @@ Thumbs.db
 /.qmake.cache
 /.qmake.stash
 /shape-tflex
-
+/cmake-build-debug
+/.idea
+CMakeLists.txt
 # qtcreator generated files
 *.pro.user*
 
